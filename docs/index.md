@@ -1,12 +1,9 @@
 # 笔记本
 
 ```{div} w3-pale-green w3-card w3-padding w3-round-xlarge w3-margin-top
-本笔记本可以直接运行代码，且持续化集成和部署到 GitHub Pages。
+PyAutoGUI 允许使用 Python 脚本控制鼠标和键盘，以自动化与其他应用程序的交互。API 的设计非常简单。PyAutoGUI 可在 Windows、macOS 和 Linux 上工作，并可在 Python 2 和 3 上运行。
 
-本项目的使用案例有：
-
-- [AI 世界|记录一些 AI 技术](https://xinetzone.github.io/ai-world/)
-- [Books with Jupyter（中文版）](https://xinetzone.github.io/jupyter-book-zh/intro.html)
+安装，可以运行：`pip install pyautogui`。
 ```
 
 ````{admonition} 本站目录
