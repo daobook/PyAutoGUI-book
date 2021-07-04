@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>速查表</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/xin-css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/w3css/4/w3pro.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/w3css/4/w3mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/w3css/4/w3.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/tabs.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "xinetzone/PyAutoGUI-book");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="shortcut icon" href="../_static/page-logo.jfif"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="入门" href="00_intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  基础
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   基础
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="00_intro.html">
+     入门
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     速查表
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <div class="w3-padding w3-card-4 w3-pale-green">
+  <a href="https://github.com/xinetzone" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub"
+      data-position="top" data-delay="50">
+      <i class="fab fa-github"></i>
+  </a>
+  <a href="mailto:q735613050@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top"
+      data-delay="50">
+      <i class="fas fa-envelope-open"></i>
+  </a>
+  <a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=735613050" class="tooltipped"
+      target="_blank" data-tooltip="QQ联系我: 735613050" data-position="top" data-delay="50">
+      <i class="fab fa-qq"></i>
+  </a>
+  <a href="https://www.zhihu.com/people/liu-xin-wei-55" class="tooltipped" target="_blank"
+      data-tooltip="关注我的知乎: liu-xin-wei-55" data-position="top" data-delay="50">
+      <i class="fab fa-zhihu1">知</i>
+  </a>
+  <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/xinet" class="tooltipped"
+      data-tooltip="领英联系我: xinet" data-position="top" data-delay="50">
+      <i class="fab fa-linkedin"></i>
+  </a>
+  <div><a href="https://github.com/xinetzone/PyAutoGUI-book">PyAutoGUI Book</a> 版权所有</div>
+</div> 
+
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/basic/01_cheat-sheet.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/xinetzone/PyAutoGUI-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/xinetzone/PyAutoGUI-book/issues/new?title=Issue%20on%20page%20%2Fbasic/01_cheat-sheet.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   通用函数
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   失效保护
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   鼠标函数
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   键盘函数
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   信息框函数
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   截图函数
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="id1">
+<h1>速查表<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>参考：<a class="reference external" href="https://pyautogui.readthedocs.io/en/latest/quickstart.html">quickstart</a></p>
+<p>这是一个关于使用 PyAutoGUI 的快速入门引用。PyAutoGUI 是跨平台的 GUI 自动化模块，可以在 Python 2 和 3 上工作。您可以控制鼠标和键盘，以及执行基本的图像识别来自动化您的计算机上的任务。</p>
+<p>本页示例中的所有关键字参数都是可选的。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyautogui</span>
+</pre></div>
+</div>
+<div class="section" id="id2">
+<h2>通用函数<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>  <span class="c1"># 当前鼠标x和y</span>
+<span class="go">(968, 56)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>  <span class="c1"># 当前屏幕分辨率的宽度和高度</span>
+<span class="go">(1920, 1080)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">onScreen</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>  <span class="c1"># 如果x和y在屏幕内，则为True。</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>失效保护<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>在每次 PyAutoGUI 调用后设置一个 2.5 秒的暂停：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyautogui</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">PAUSE</span> <span class="o">=</span> <span class="mf">2.5</span>
+</pre></div>
+</div>
+<p>当故障安全模式为 <code class="docutils literal notranslate"><span class="pre">True</span></code> 时，将鼠标移动到左上角将引发 <code class="docutils literal notranslate"><span class="pre">pyautogui.FailSafeException</span></code> 可以中止程序的：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyautogui</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">FAILSAFE</span> <span class="o">=</span> <span class="bp">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>鼠标函数<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>XY 坐标在屏幕的左上角以 <span class="math notranslate nohighlight">\(0,0\)</span> 为原点。X 向右增加，Y 向下增加。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 将鼠标移动到XY坐标上的num_second秒</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">num_seconds</span><span class="p">)</span> 
+<span class="c1"># 相对于当前位置移动鼠标</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">moveRel</span><span class="p">(</span><span class="n">xOffset</span><span class="p">,</span> <span class="n">yOffset</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">num_seconds</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>如果 <code class="docutils literal notranslate"><span class="pre">duration</span></code> 为 0 或未指定，则立即移动。注意:在 Mac 上拖拽不能立即完成。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 拖动鼠标到XY</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">dragTo</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">num_seconds</span><span class="p">)</span>
+<span class="c1"># 相对于当前位置拖动鼠标</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">dragRel</span><span class="p">(</span><span class="n">xOffset</span><span class="p">,</span> <span class="n">yOffset</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">num_seconds</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>调用 <code class="docutils literal notranslate"><span class="pre">click()</span></code> 只是用鼠标当前位置的左键点击鼠标一次，但关键字参数可以改变这一点：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pyautogui</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">,</span> <span class="n">clicks</span><span class="o">=</span><span class="n">num_of_clicks</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="n">secs_between_clicks</span><span class="p">,</span> <span class="n">button</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">button</span></code> 关键字参数可以是<code class="docutils literal notranslate"><span class="pre">'left'</span></code>， <code class="docutils literal notranslate"><span class="pre">'middle'</span></code>，或 <code class="docutils literal notranslate"><span class="pre">'right'</span></code>。</p>
+<p>所有的单击都可以用 <code class="docutils literal notranslate"><span class="pre">click()</span></code> 完成，但这些函数的存在是为了可读性。关键字参数是可选的：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">rightClick</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">middleClick</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">doubleClick</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">tripleClick</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>正滚动将向上滚动，负滚动将向下滚动：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pyautogui</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">amount_to_scroll</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>单个按钮向下和向上事件可以分别调用：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pyautogui</span><span class="o">.</span><span class="n">mouseDown</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">,</span> <span class="n">button</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">mouseUp</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">moveToX</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">moveToY</span><span class="p">,</span> <span class="n">button</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>键盘函数<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>在调用函数时，按下的键会转到键盘光标所在的位置。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 对于输入文本，换行符是 Enter</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">typewrite</span><span class="p">(</span><span class="s1">&#39;Hello world!</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="n">secs_between_keys</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>也可以传递一个键名列表</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pyautogui</span><span class="o">.</span><span class="n">typewrite</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="s1">&#39;backspace&#39;</span><span class="p">,</span> <span class="s1">&#39;enter&#39;</span><span class="p">,</span> <span class="s1">&#39;f1&#39;</span><span class="p">],</span> <span class="n">interval</span><span class="o">=</span><span class="n">secs_between_keys</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>键名的完整列表在 <code class="docutils literal notranslate"><span class="pre">pyautogui.KEYBOARD_KEYS</span></code> 中。</p>
+<p>像 Ctrl-S 或 Ctrl-Shift-1 这样的键盘热键可以通过向 <code class="docutils literal notranslate"><span class="pre">hotkey()</span></code> 传递一个键名列表来实现：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># ctrl-c 复制</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">hotkey</span><span class="p">(</span><span class="s1">&#39;ctrl&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="c1"># ctrl-v 粘贴</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">hotkey</span><span class="p">(</span><span class="s1">&#39;ctrl&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>单个按钮向下和向上事件可以分别调用：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pyautogui</span><span class="o">.</span><span class="n">keyDown</span><span class="p">(</span><span class="n">key_name</span><span class="p">)</span>
+<span class="n">pyautogui</span><span class="o">.</span><span class="n">keyUp</span><span class="p">(</span><span class="n">key_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>信息框函数<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p>如果你需要暂停程序，直到用户单击 OK，或者想向用户显示一些信息，消息框函数有类似于 JavaScript 的名称：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">alert</span><span class="p">(</span><span class="s1">&#39;This displays some text with an OK button.&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">confirm</span><span class="p">(</span><span class="s1">&#39;This displays text and has an OK and Cancel button.&#39;</span><span class="p">)</span>
+<span class="go">&#39;OK&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">prompt</span><span class="p">(</span><span class="s1">&#39;This lets the user type in a string and press OK.&#39;</span><span class="p">)</span>
+<span class="go">&#39;This is what I typed in.&#39;</span>
+</pre></div>
+</div>
+<p>如果用户单击 Cancel, <code class="docutils literal notranslate"><span class="pre">prompt()</span></code>函数将返回 <code class="docutils literal notranslate"><span class="pre">None</span></code>。</p>
+</div>
+<div class="section" id="id7">
+<h2>截图函数<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<p>PyAutoGUI 使用 Pillow/PIL 来处理与图像相关的数据。</p>
+<p>在 Linux 上，必须运行 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">scrot</span></code> 来使用截图特性。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">screenshot</span><span class="p">()</span>  <span class="c1"># returns a Pillow/PIL Image object</span>
+<span class="go">&lt;PIL.Image.Image image mode=RGB size=1920x1080 at 0x24C3EF0&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">screenshot</span><span class="p">(</span><span class="s1">&#39;foo.png&#39;</span><span class="p">)</span>  <span class="c1"># returns a Pillow/PIL Image object, and saves it to a file</span>
+<span class="go">&lt;PIL.Image.Image image mode=RGB size=1920x1080 at 0x31AA198&gt;</span>
+</pre></div>
+</div>
+<p>如果你有一个想要点击的图像文件，你可以通过 <code class="docutils literal notranslate"><span class="pre">locateOnScreen()</span></code> 在屏幕上找到它。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">locateOnScreen</span><span class="p">(</span><span class="s1">&#39;looksLikeThis.png&#39;</span><span class="p">)</span>  <span class="c1"># 返回被找到的第一个位置的(左，上，宽，高)</span>
+<span class="go">(863, 417, 70, 13)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">locateAllOnScreen()</span></code> 函数将为它在屏幕上找到的所有位置返回一个生成器：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pyautogui</span><span class="o">.</span><span class="n">locateAllOnScreen</span><span class="p">(</span><span class="s1">&#39;looksLikeThis.png&#39;</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="go">(863, 117, 70, 13)</span>
+<span class="go">(623, 137, 70, 13)</span>
+<span class="go">(853, 577, 70, 13)</span>
+<span class="go">(883, 617, 70, 13)</span>
+<span class="go">(973, 657, 70, 13)</span>
+<span class="go">(933, 877, 70, 13)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">pyautogui</span><span class="o">.</span><span class="n">locateAllOnScreen</span><span class="p">(</span><span class="s1">&#39;looksLikeThis.png&#39;</span><span class="p">))</span>
+<span class="go">[(863, 117, 70, 13), (623, 137, 70, 13), (853, 577, 70, 13), (883, 617, 70, 13), (973, 657, 70, 13), (933, 877, 70, 13)]</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">locateCenterOnScreen()</span></code> 函数只是返回图像在屏幕上的中间位置的XY坐标：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pyautogui</span><span class="o">.</span><span class="n">locateCenterOnScreen</span><span class="p">(</span><span class="s1">&#39;looksLikeThis.png&#39;</span><span class="p">)</span>  <span class="c1"># returns center x and y</span>
+<span class="go">(898, 423)</span>
+</pre></div>
+</div>
+<p>如果在屏幕上找不到图像，这些函数将返回 <code class="docutils literal notranslate"><span class="pre">None</span></code>。</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>定位功能很慢，可能需要一到两秒。</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./basic"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="00_intro.html" title="previous page">入门</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -67,7 +67,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "xinetzone/mini-book");
+    script.setAttribute("repo", "xinetzone/PyAutoGUI-book");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -83,8 +83,6 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -95,7 +93,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="shortcut icon" href="_static/page-logo.jfif"/>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="next" title="基础" href="basic/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -125,19 +123,31 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
-  案例
+  基础
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="basic/index.html">
+   基础
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Content with notebooks
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="basic/00_intro.html">
+     入门
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="basic/01_cheat-sheet.html">
+     速查表
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -166,7 +176,7 @@ commentsRunWhenDOMLoaded(addUtterances);
       data-tooltip="领英联系我: xinet" data-position="top" data-delay="50">
       <i class="fab fa-linkedin"></i>
   </a>
-  <div><a href="https://github.com/xinetzone/mini-book">Jupyter Book</a> 版权所有</div>
+  <div><a href="https://github.com/xinetzone/PyAutoGUI-book">PyAutoGUI Book</a> 版权所有</div>
 </div> 
 
 </div>
@@ -219,11 +229,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/xinetzone/mini-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/xinetzone/PyAutoGUI-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/mini-book/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/PyAutoGUI-book/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -255,20 +265,19 @@ commentsRunWhenDOMLoaded(addUtterances);
   <div class="section" id="id1">
 <h1>笔记本<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <div class="w3-pale-green w3-card w3-padding w3-round-xlarge w3-margin-top docutils">
-<p>本笔记本可以直接运行代码，且持续化集成和部署到 GitHub Pages。</p>
-<p>本项目的使用案例有：</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://xinetzone.github.io/ai-world/">AI 世界|记录一些 AI 技术</a></p></li>
-<li><p><a class="reference external" href="https://xinetzone.github.io/jupyter-book-zh/intro.html">Books with Jupyter（中文版）</a></p></li>
-</ul>
+<p>PyAutoGUI 允许使用 Python 脚本控制鼠标和键盘，以自动化与其他应用程序的交互。API 的设计非常简单。PyAutoGUI 可在 Windows、macOS 和 Linux 上工作，并可在 Python 2 和 3 上运行。</p>
+<p>安装，可以运行：<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pyautogui</span></code>。</p>
 </div>
 <div class="tip dropdown w3-pale-blue w3-card-4 w3-padding w3-round-xlarge w3-margin-top admonition">
 <p class="admonition-title">本站目录</p>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">案例</span></p>
+<p class="caption"><span class="caption-text">基础</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic/index.html">基础</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="basic/00_intro.html">入门</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic/01_cheat-sheet.html">速查表</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -299,7 +308,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         
         <div class='prev-next-bottom'>
             
-    <a class='right-next' id="next-link" href="markdown.html" title="next page">Markdown Files</a>
+    <a class='right-next' id="next-link" href="basic/index.html" title="next page">基础</a>
 
         </div>
         
