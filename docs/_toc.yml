@@ -10,7 +10,7 @@
 format: jb-book  # 可选 jb-article，jb-book
 root: index # A path to the *root page* (landing page) of your book
 parts:
-- caption: 基础
+- caption: 教程
   chapters:
   - file: basic/index
     sections:

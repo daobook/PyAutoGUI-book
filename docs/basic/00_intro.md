@@ -1,5 +1,7 @@
 # 入门
 
+安装：`pip install pyautogui`。
+
 PyAutoGUI 有几个特性：
 
 - 移动鼠标并在其他应用程序的窗口中单击或输入。
